@@ -74,7 +74,7 @@ body {
 .instruments {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     margin: 20px;
     background-color: rgb(51, 178, 115);
     padding: 10px;
