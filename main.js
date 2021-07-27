@@ -49,7 +49,6 @@ function update() {
         
         //global timing
         count.innerText = beat 
-           console.log(beat)
         if (beat == 4) {
             beat = 0
            
