@@ -12,6 +12,7 @@ const count = document.querySelector('.count')
 
 // This function is called every 600ms
 function update() {
+    beat++
     //instrument section
     const metronome = document.querySelector('#metro');
     const kickCheck = document.querySelector('#kick');
@@ -26,7 +27,7 @@ function update() {
     if (metronome.checked === true)
     {
 
-        if (beat % 4 == 0){
+        if (beat == 1){
             tock.play();
             }
             else {
@@ -45,16 +46,14 @@ function update() {
         }
 
         
-
+        
         //global timing
-        beat++
-        if (beat == 5) {
-            beat = 1
+        count.innerText = beat 
+           console.log(beat)
+        if (beat == 4) {
+            beat = 0
            
     }
-    console.log(kickTime.value)
-console.log(beat)
-count.innerText = beat 
 }
 
 // This function sets up update() to be called every 600ms
