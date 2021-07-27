@@ -70,3 +70,14 @@ body {
     transform-origin: bottom center;
     animation: tick 1200ms ease-in-out infinite;
 }
+
+.instruments {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 20px;
+    background-color: rgb(51, 178, 115);
+    padding: 10px;
+    border: solid #F2CC8F 1px ;
+    width: 20em;
+}
